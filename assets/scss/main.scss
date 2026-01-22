@@ -1,1 +1,10 @@
-@use '../
+@use './vendor/normalize';
+@use './base/base';
+@use './abstract/mixin';
+@use './abstract/variables';
+@use './components/button';
+@use './layout/footer';
+@use './layout/header';
+@use './layout/hero';
+@use './layout/section_1';
+@use './layout/sections';

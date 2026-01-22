@@ -1,6 +1,8 @@
 // Mixin para bordes de botón
 
-@mixin border_btn() {
+@use'./variables' as *
+
+@mixin border_btn(border_btn) {
     border-radius: 10px;
     padding: 20px;
     text-align: center;
