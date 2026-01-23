@@ -313,26 +313,15 @@ template {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.btn_1, btn_2, btn_3, btn_4 {
+.btn_1btn_2btn_3btn_4 {
   border-radius: 10px;
   padding: 20px;
   text-align: center;
 }
 
-.btn_1 {
-  background-color: black;
-}
-
-.btn_2 {
-  background-color: aqua;
-}
-
-.btn_3 {
-  background-color: bisque;
-}
-
-.btn_4 {
-  background-color: aliceblue;
+.title {
+  font: bold;
+  text-align: center;
 }
 
 .header {
@@ -340,7 +329,12 @@ template {
   background-color: black;
   display: flex;
   justify-content: space-around;
-  color: rgba(227, 222, 222, 0.6823529412);
+  color: rgb(245, 242, 242);
+}
+
+.card-footer {
+  background-color: black;
+  color: rgb(245, 242, 242);
 }
 
 /*# sourceMappingURL=style.css.map */
