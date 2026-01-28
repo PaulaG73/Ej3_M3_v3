@@ -1,2 +1,18 @@
 @use'../abstract/variables' as *;
 @use'../abstract/mixin' as *;
+
+.viñas {
+    padding-bottom: 30px;
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: rgba(116, 3, 3, 0.674);
+}
+
+.viñas__card {
+    padding-bottom: 30px;
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+}

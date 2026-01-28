@@ -1,2 +1,15 @@
 @use'../abstract/variables' as *;
 @use'../abstract/mixin' as *;
+
+.quéofrecemos {
+    padding-bottom: 30px;
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: rgba(116, 3, 3, 0.674);
+
+}
+
+.quéofrecemos__text {
+    text-align: justify;
+}
