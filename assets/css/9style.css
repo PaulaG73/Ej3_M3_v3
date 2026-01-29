@@ -313,7 +313,7 @@ template {
   padding: 0;
 }
 
-.btn_1btn_2btn_3btn_4 {
+.btn {
   border-radius: 10px;
   padding: 20px;
   text-align: center;
@@ -372,8 +372,8 @@ template {
   display: block;
 }
 
-.navbar-item {
-  font-size: xx-small;
+.navbar__navbar-item {
+  color: red;
 }
 
 .quéofrecemos {
@@ -415,4 +415,4 @@ template {
   font-size: small;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=9style.css.map */

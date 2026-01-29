@@ -16,7 +16,7 @@
     <!-- Acá va el logo de la empresa y una barra de navegación -->
 
     <header>
-        <div class="header">
+        <div class="header" id="header">
             <!-- LOGO -->
             <img src="./assets/img/vinóloga sin fondo.png" width="120">
             <!-- NAVBAR -->
@@ -29,16 +29,16 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
-                            <li class="nav-item">
+                            <li class="navbar__navbar-item">
                                 <a class="nav-link active" aria-current="page" href="#Hero">El Mundo de Vinóloga</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="navbar__navbar-item">
                                 <a class="nav-link active" href="#Quéofrecemos">Qué ofrece Vinóloga?</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="navbar__navbar-item">
                                 <a class="nav-link active" href="#Viñas" aria-disabled="true">Nuestras Viñas amigas</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="navbar__navbar-item">
                                 <a class="nav-link active" href="#Footer" aria-disabled="true">Footer</a>
                             </li>
                         </ul>
@@ -61,21 +61,21 @@
                 <p class="container__text__p">Es tiempo de APRENDER, es tiempo de COMPARTIR, es tiempo de DISFRUTAR</p>
                 <br>
                 <p class="container__text__p">Bienvenido al Mundo de Vinóloga...el mundo de los "VINOS CON CUENTO"</p>
+                <!-- Acá va el botón -->
+                <div class="hero__btn">
+                    <a href="#Footer" class="btn btn-dark">Sign in</a>
+                </div>
             </div>
 
-
         </div>
-<br>
-        <div><a href="#Footer" class="btn btn-dark btn_1">Sign in</a></div>
-        <!-- Acá va el botón -->
-        
     </section>
 
     <!-- Sección 1/Qué ofrece Vinóloga -->
 
     <section id="Quéofrecemos" class="quéofrecemos">
         <H2 class="title">Qué ofrece Vinóloga?</H2>
-        <p class="quéofrecemos__text">Vinóloga nace para crear un puente entre la gente y el vino en todas sus expresiones… de una forma lúdica y
+        <p class="quéofrecemos__text">Vinóloga nace para crear un puente entre la gente y el vino en todas sus
+            expresiones… de una forma lúdica y
             siempre priorizando la calidad. Ofrece turismo enológico y gastronómico y también eventos a la medida… desde
             catas personalizadas en tu propia casa, o empresa, hasta producciones de alto glamour. Vinóloga pone a tu
             disposición vinos, espumantes y destilados de autor, de pequeñas producciones… “esos que se hacen a escala
@@ -89,7 +89,7 @@
         <!-- Acá va una tarjeta con una foto, una descripción del servicio y un botón de "cotiza a quí"-->
         <!-- Servicio 3/Eventos para Empresas -->
         <!-- Acá va una grilla de 3 tarjetas con una foto, una descripción del servicio y un botón de "cotiza aquí"-->
-        <div class="row" id="Servicios">
+        <div class="row">
             <div class="col-sm-4 mb-3 mb-sm-0">
                 <div class="card">
                     <img src="./assets/img/ENOTURISMO.JPG" class="card-img-top" height="350">
@@ -97,8 +97,8 @@
                         <h5 class="card-title title">Enoturismo</h5>
                         <p class="card-text">Experiencia única, visitando viñas de autor, con atención personalizada
                             de sus propios dueños y/o enólogos.</p>
-                        <a href="#e-mail" class="btn btn-dark btn_2">Cotiza aquí</a>
-                        <a href="#Viñas" class="btn btn-dark btn_3">Ir a Viñas Amigas</a>
+                        <a href="#e-mail" class="btn btn-dark">Cotiza aquí</a>
+                        <a href="#Viñas" class="btn btn-dark">Ir a Viñas Amigas</a>
                     </div>
                 </div>
             </div>
@@ -109,7 +109,7 @@
                         <h5 class="card-title title">Catas de Vino</h5>
                         <p class="card-text">Catas personalizadas para pequeños grupos de clientes particulares o
                             corporativas para empresas.</p>
-                        <a href="#e-mail" class="btn btn-dark btn_2 ">Cotiza aquí</a>
+                        <a href="#e-mail" class="btn btn-dark">Cotiza aquí</a>
                     </div>
                 </div>
             </div>
@@ -121,7 +121,7 @@
                         <p class="card-text">Eventos a la medida, con foco en vinos. Experiencias lúdicas y
                             dinámicas
                             para particulares o empresas.</p>
-                        <a href="#e-mail" class="btn btn-dark btn_2 ">Cotiza aquí</a>
+                        <a href="#e-mail" class="btn btn-dark">Cotiza aquí</a>
 
                     </div>
                 </div>
@@ -130,55 +130,59 @@
 
     </section>
     <!-- Sección 3/Nuestras viñas amigas -->
-    <section id="Viñas" class="viñas">
+    <section id="Viñas" class="quéofrecemos">
         <h2 class="title">Nuestras Viñas amigas</h2>
-        <!-- Acá va un título, tarjetas con foto, descripción, ubicación, distancia 
-         tipos de tour y catálogo de vinos -->
-        <div class="row">
-            <div class="viñas__card">
-                <h3 class="title">Mujer Andina Wines</h3>
-                <img src="./assets/img/Mujer Andina Wines.jpg" class="card-img-top">
-                <div class="card-body">
-                    <h5 class="card-title title">Los Andes son nuestra inspiración.
-                        Las burbujas y el vino nuestra mayor motivación</h5>
-                    <p class="card-text">MUJER ANDINA WINES es un proyecto familiar de espumantes y vinos a escala
-                        humana, que nace el año 2012 con la visión y el sueño de crear productos innovadores, bajo una
-                        filosofía preferentemente orgánica, sustentable con el medio ambiente y, por supuesto, con altos
-                        estándares de calidad en el rubro vitivinícola. Creemos en la maravilla de país que tenemos y
-                        por eso elaboramos vinos de diferentes terroirs; que nos permiten mostrar nuestro país en su
-                        diversidad. ¡Revelar la nueva cara de los vinos de Chile nos motiva enormemente!</p>
-                    <a href="" class="btn btn-dark btn_2">Catálogo de tours</a>
-                    <a href="" class="btn btn-dark btn_3">Portafolio de Vinos</a>
+
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+                <div class="card">
+                    <img src="./assets/img/Mujer Andina Wines.jpg" class="card-img-top" height="300">
+                    <div class="viñas__card-body">
+                        <h5 class="title" class="card-title">Mujer Andina Wines</h5>
+                        <h6 class="title">Los Andes son nuestra inspiración.
+                    Las burbujas y el vino, nuestra mayor motivación...</h6>
+                        <p class="viñas__card-text">MUJER ANDINA WINES es un proyecto familiar de espumantes y vinos a escala
+                            humana, que nace el año 2012 con la visión y el sueño de crear productos innovadores, bajo
+                            una filosofía preferentemente orgánica, sustentable con el medio ambiente y, por supuesto,
+                            con altos estándares de calidad en el rubro vitivinícola. Creemos en la maravilla de país
+                            que tenemos y por eso elaboramos vinos de diferentes terroirs; que nos permiten mostrar
+                            nuestro país en su diversidad. ¡Revelar la nueva cara de los vinos de Chile nos motiva
+                            enormemente!</p>
+                        <a href="" class="btn btn-dark">Catálogo de Tours</a>
+                        <a href="" class="btn btn-dark">Portafolio de Vinos</a>
+
+                    </div>
                 </div>
             </div>
-            <br>
-            <div class="viñas__card">
-                <h3 class="title">Viñateros de Raíz</h3>
-                <img src="./assets/img/viñateros de raiz.jpg" class="card-img-top">
-                <div class="card-body">
-                    <h5 class="card-title title">Una Paisajista y un Enólogo</h5>
-                    <p class="card-text">Viñateros de Raíz es un proyecto familiar iniciado el año 2015 que se
-                        diferencia por ser una “Viña-Jardín” manejada a escala humana, buscando siempre el equilibrio,
-                        la biodiversidad y la belleza del paisaje. El gran desafío del proyecto fue, desde un principio,
-                        descubrir e interpretar al máximo el potencial de nuestro distintivo terruño, para dar vida a
-                        vinos que representen fielmente su origen. </p>
-                    <a href="" class="btn btn-dark btn_2">Catálogo de tours</a>
-                    <a href="" class="btn btn-dark btn_3">Portafolio de Vinos</a>
+            <div class="col">
+                <div class="card">
+                    <img src="./assets/img/viñateros de raiz.jpg" class="card-img-top" height="300">
+                    <div class="viñas__card-body">
+                        <h5 class="title" class="card-title">Viñateros de Raíz</h5>
+                        <h6 class="title">Una Paisajista y un Enólogo. Queremos compartir contigo nuestra historia de vida…</h6>
+                        <p class="viñas__card-text">VIÑATEROS DE RAÍZ es un proyecto familiar iniciado el año 2015 que se
+                            diferencia por ser una “Viña-Jardín” manejada a escala humana, buscando siempre el
+                            equilibrio, la biodiversidad y la belleza del paisaje. El gran desafío del proyecto fue,
+                            desde un principio, descubrir e interpretar al máximo el potencial de nuestro distintivo
+                            terruño, para dar vida a vinos que representen fielmente su origen.Tenemos una muy pequeña
+                            producción, con un viñedo emplazado sobre un suelo de antigua toba de origen volcánico y
+                            manejado bajo la filosofía de la Agricultura Regenerativa, que complementamos con uvas de
+                            nuestros vecinos. </p>
+
+                        <a href="" class="btn btn-dark">Catálogo de Tours</a>
+                        <a href="" class="btn btn-dark">Portafolio de Vinos</a>
+                    </div>
                 </div>
             </div>
         </div>
-
     </section>
-
 
     <!-- FOOTER -->
     <!-- Acá va una tarjeta con nombre de la empresa,el copyright y contacto con botón para dirigir al correo de Vinóloga -->
     <footer id="Footer" class="footer">
 
         <div class="card text-center">
-            <div class="card-footer">
-                AGENCIA DE TURISMO
-            </div>
+
             <div class="footer__card-body">
                 <h5 class="card-title">Comercialización y Servicios Vinologa SpA</h5>
                 <div class="card__derechos">
@@ -190,7 +194,7 @@
                 <br>
                 <br>
 
-                <a href="#" class="btn btn-dark btn_4">Volver al Inicio</a>
+                <a href="#header" class="btn btn-dark">Volver al Inicio</a>
             </div>
         </div>
 
